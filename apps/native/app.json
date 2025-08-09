@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "happy-scrolling",
+    "slug": "happy-scrolling",
+    "version": "1.0.0",
+    "scheme": "happy-scrolling",
+    "plugins": ["expo-router", "expo-secure-store"],
+    "experiments": {
+      "typedRoutes": true,
+      "tsconfigPaths": true
+    },
+    "newArchEnabled": true,
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.amanvarshney01.mybettertapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.amanvarshney01.mybettertapp",
+      "edgeToEdgeEnabled": true
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "ignoreUnknown": false,
+    "includes": [
+      "**",
+      "!**/.next",
+      "!**/dist",
+      "!**/.turbo",
+      "!**/dev-dist",
+      "!**/.zed",
+      "!**/.vscode",
+      "!**/routeTree.gen.ts",
+      "!**/src-tauri",
+      "!**/.nuxt",
+      "!bts.jsonc",
+      "!**/.expo",
+      "!**/.wrangler",
+      "!**/.source",
+      "!**/worker-configuration.d.ts"
+    ]
+  },
+  "extends": ["ultracite"],
+  "linter": {
+    "rules": {
+      "style": {
+        "noNestedTernary": "off"
+      }
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["apps/native/app/**/*.tsx"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useFilenamingConvention": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["**/*.css"],
+      "linter": {
+        "rules": {
+          "nursery": {
+            "noUnknownAtRule": "off"
+          }
+        }
+      }
+    }
+  ]
+}

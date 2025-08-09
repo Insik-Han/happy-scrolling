@@ -1,0 +1,18 @@
+{
+  "name": "happy-scrolling-server",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-06-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "NODE_ENV": "production"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "YOUR_DB_NAME",
+      "database_id": "YOUR_DB_ID",
+      "preview_database_id": "local-test-db",
+      "migrations_dir": "./src/db/migrations"
+    }
+  ]
+}
